@@ -1,0 +1,26 @@
+Source: python-pysnmp4-apps
+Section: python
+Priority: optional
+Maintainer: Jan Luebbe <jluebbe@debian.org>
+Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>,
+	   Deepak Tripathi <apenguinlinux@gmail.com>
+Build-Depends: debhelper-compat (= 12),
+               dh-python,
+               python3-all,
+	       python3-setuptools
+Standards-Version: 3.9.3
+Homepage: http://pysnmp.sourceforge.net/
+Vcs-Git: https://salsa.debian.org/python-team/modules/python-pysnmp4-apps.git
+Vcs-Browser: https://salsa.debian.org/python-team/modules/python-pysnmp4-apps
+
+Package: python3-pysnmp4-apps
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Breaks: python-pysnmp4-apps
+Replaces: python-pysnmp4-apps
+Suggests: python3-pysnmp4-mibs
+Description: Applications for the Python SNMP library
+ This package contains a set of SNMP applications written on top of
+ the PYSNMP v4 package, which is written entirely in Python and is
+ self-sufficient in terms that it does not rely on any third party
+ tool.

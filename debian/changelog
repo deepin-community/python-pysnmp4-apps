@@ -1,0 +1,123 @@
+python-pysnmp4-apps (0.3.2-2.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * python3-pysnmp4-apps: Breaks+Replaces: python-pysnmp4-apps
+    (Closes: #959848)
+
+ -- Adrian Bunk <bunk@debian.org>  Thu, 04 Jun 2020 08:29:02 +0300
+
+python-pysnmp4-apps (0.3.2-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+
+  [ Joao Eriberto Mota Filho ]
+  * Re-upload as source-only to allow the package migrate to testing.
+
+  [ Debian Janitor ]
+  * Use secure URI in debian/watch.
+  * Bump debhelper from deprecated 5 to 12.
+  * Set debhelper-compat version in Build-Depends.
+
+ -- Joao Eriberto Mota Filho <eriberto@debian.org>  Sun, 05 Apr 2020 00:49:55 -0300
+
+python-pysnmp4-apps (0.3.2-2) unstable; urgency=low
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/control: Remove trailing whitespaces
+  * d/control: Remove ancient X-Python-Version field
+  * Convert git repository from git-dpm to gbp layout
+
+  [ Sandro Tosi ]
+  * Drop python2, add python3 support; Closes: #782953, #938095
+  * Switch from cdbs to dh sequencer (and dh-python)
+
+ -- Sandro Tosi <morph@debian.org>  Fri, 20 Mar 2020 22:58:51 -0400
+
+python-pysnmp4-apps (0.3.2-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Deepak Tripathi ]
+  * Bumped Standard version to 3.8.4 (No changes).
+  * debian/control
+     + added myself to uploaders.
+     + added ${misc:Depends} because debhelper required.
+     + added BD to python-setuptools
+     + removed python-dev and added python.
+  * debian/copyright
+     + added debian's copyright information.
+     + formated and updated copy information.
+  * debian/source
+     + switch to dpkg-source 3.0 (quilt) format.
+  * debian/rules
+     + removed simple-patchsys.mk.
+  * debian/pysnmpcmd.1
+     + removed hyphen-used-as-minus-sign
+  * debian/README.source
+     + added README.source to put quilt information.
+
+  [ Arnaud Fontaine ]
+  * New upstream release.
+  * Switch from python-support to dh_python2.
+  * Switch debian/copyright to machine-readable format.
+  * debian/control:
+    + Remove myself from Uploaders.
+    + Replace python Build-Depends by python-all.
+    + Drop patchutils as 3.0 (quilt) source format is now used.
+    + Bump Standards-Version to 3.9.3. No changes needed.
+  * Add debian/source/options to fix double build issue because of
+    .egg-info by ignoring it.
+
+  [ Sandro Tosi ]
+  * debian/control:
+    + Switch Vcs-Browser field to viewsvn.
+
+ -- Arnaud Fontaine <arnau@debian.org>  Mon, 21 May 2012 20:19:23 +0900
+
+python-pysnmp4-apps (0.2.6a-1) unstable; urgency=low
+
+  [ Jan Luebbe ]
+  * Upload to Debian (closes: #471235)
+  * New upstream release
+  * Remove useless debian/control.in
+  * debian/control
+    - Update my maintainer address
+    - Vcs-Browser and Homepage fields added
+    - XS-Vcs-Svn field renamed to Vcs-Svn
+    - Update Arnaud Fontaine's email address
+  * debian/copyright
+    - Update email addresses and copyright years
+
+  [ Sandro Tosi ]
+  * debian/control
+    - uniforming Vcs-Browser field
+
+ -- Jan Lübbe <jluebbe@debian.org>  Sun, 16 Mar 2008 20:55:49 +0100
+
+python-pysnmp4-apps (0.2.5a-1) unstable; urgency=low
+
+  [ Jan Luebbe ]
+  * New upstream release.
+  * Update debian/copyright.
+  * Adapt manpages from net-snmp.
+
+  [ Piotr Ozarowski ]
+  * Added XS-Vcs-Svn field
+
+  [ Arnaud Fontaine ]
+  * debian/control:
+    + Improve package description.
+
+ -- Jan Luebbe <jluebbe@lasnet.de>  Tue, 01 May 2007 19:00:37 +0200
+
+python-pysnmp4-apps (0.2.4a-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Jan Luebbe <jluebbe@lasnet.de>  Thu,  1 Jun 2006 16:48:28 +0200

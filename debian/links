@@ -1,0 +1,5 @@
+usr/share/man/man1/pysnmpcmd.1	usr/share/man/man1/pysnmpbulkwalk.1
+usr/share/man/man1/pysnmpcmd.1	usr/share/man/man1/pysnmpget.1
+usr/share/man/man1/pysnmpcmd.1	usr/share/man/man1/pysnmpset.1
+usr/share/man/man1/pysnmpcmd.1	usr/share/man/man1/pysnmptranslate.1
+usr/share/man/man1/pysnmpcmd.1	usr/share/man/man1/pysnmpwalk.1
